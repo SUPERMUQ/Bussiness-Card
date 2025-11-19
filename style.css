@@ -1,15 +1,16 @@
 body{
-    margin: 30px;
+    margin: none; 
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
+    background-image: linear-gradient(#CBE957,#313743) ; 
+    min-height: 100vh; 
 }
 
 .B-card{
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-image: linear-gradient(#CBE957,#313743) ;
-    height: 400px;
-    
+    text-shadow: 2px 2px 3px #CBE957;    
+    height: 600px;
+    padding-top: 150px;
 }
 
 .profile{
@@ -32,6 +33,68 @@ body{
 }
 
 
-.border{
-        border: 2px dotted blue;
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+    .B-card {
+        padding-top: 50px;
+        height: auto;
+        min-height: 100vh;
+    }
+    
+    .card {
+        width: 90%;
+        max-width: 350px;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 30px 20px;
+    }
+    
+    .profile {
+        width: 120px;
+        margin-bottom: 10px;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+    
+    h3 {
+        font-size: 1.3rem;
+        margin: 10px 0;
+    }
+    
+    p, h4 {
+        font-size: 1rem;
+        margin: 8px 0;
+    }
 }
+
+@media screen and (max-width: 480px) {
+    .B-card {
+        padding-top: 30px;
+    }
+    
+    .card {
+        width: 85%;
+        padding: 25px 15px;
+    }
+    
+    .profile {
+        width: 100px;
+    }
+    
+    h1 {
+        font-size: 1.3rem;
+    }
+    
+    h3 {
+        font-size: 1.2rem;
+    }
+    
+    p, h4 {
+        font-size: 0.9rem;
+    }
+}
+
